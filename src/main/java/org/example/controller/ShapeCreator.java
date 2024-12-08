@@ -34,6 +34,7 @@ public class ShapeCreator {
         FillBehavior fillBehavior = state.isFill() ? new Fill() : new NoFill();
         fillBehavior.setShape(shape);
         fillBehavior.setColor(state.getColor());
+        fillBehavior.setLine(state.isLine());
 
         newShape.setFb(fillBehavior);
         newShape.setShape(shape);

@@ -11,5 +11,7 @@ public interface FillBehavior {
 
     void setShape(RectangularShape s);
 
+    void setLine(boolean line);
+
     FillBehavior clone();
 }

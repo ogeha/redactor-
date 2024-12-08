@@ -55,15 +55,24 @@ public class MenuCreator extends MenuState {
         JRadioButtonMenuItem square = new JRadioButtonMenuItem("Прямоугольник");
         square.addActionListener(e -> {
             state.setShapeType(ShapeType.RECTANGLE);
+            state.setLine(false);
         });
         shapeMenu.add(square);
         group.add(square);
         JRadioButtonMenuItem ellipse = new JRadioButtonMenuItem("Эллипс");
         ellipse.addActionListener(e -> {
             state.setShapeType(ShapeType.ELLIPSE);
+            state.setLine(false);
         });
         shapeMenu.add(ellipse);
         group.add(ellipse);
+        JRadioButtonMenuItem line = new JRadioButtonMenuItem("Линия");
+        line.addActionListener(e -> {
+            state.setShapeType(ShapeType.LINE);
+            state.setLine(true);
+        });
+        shapeMenu.add(line);
+        group.add(line);
         return shapeMenu;
     }
 

@@ -8,6 +8,7 @@ public class Fill implements FillBehavior {
 
     private Color color;
     private RectangularShape shape;
+    private boolean line;
 
     @Override
     public void setColor(Color color) {
@@ -25,6 +26,11 @@ public class Fill implements FillBehavior {
     @Override
     public void setShape(RectangularShape s) {
         shape = s;
+    }
+
+    @Override
+    public void setLine(boolean line) {
+        this.line = line;
     }
 
     @Override

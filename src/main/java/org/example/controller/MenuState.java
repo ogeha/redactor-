@@ -11,15 +11,24 @@ public class MenuState {
     private Color color;
     private ShapeType shapeType;
     private AppAction actionDraw;
+    private boolean line;
 
     public MenuState(){
         shapeType = ShapeType.RECTANGLE;
         color = Color.BLUE;
         fill = false;
+        line = false;
     }
 
     public boolean isFill() {
         return fill;
+    }
+    public boolean isLine(){
+        return line;
+    }
+
+    public void setLine(boolean line) {
+        this.line = line;
     }
 
     public void setFill(boolean fill) {

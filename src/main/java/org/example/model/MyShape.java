@@ -14,6 +14,7 @@ public class MyShape implements Cloneable{
     private RectangularShape shape;
     private FillBehavior fb;
 
+
     public Color getColor() {
         return color;
     }
